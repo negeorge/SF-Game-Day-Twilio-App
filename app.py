@@ -18,10 +18,10 @@ def game_schedule():
     
     for game in schedule['games']:
         if todays_date == game['date']:
-            resp.sms("Giants Game Today! %s %s %s" % (game['time'], game['opponent'], game['location']))
+            resp.sms("Giants Game Today! :-) %s %s %s - by http://inish.org" % (game['time'], game['opponent'], game['location']))
             return str(resp)
 			
-    resp.sms("No Giants Game Today")
+    resp.sms("No Giants Game Today :-( - by http://inish.org")
     return str(resp)
  
 if __name__ == "__main__":
