@@ -8,7 +8,7 @@ import twilio.twiml
 app = Flask(__name__)
 app.debug = True
 
-schedule = json.load(open('giants2012schedule.json'))
+schedule = json.load(open('giants2013schedule.json'))
 @app.route("/")
 def game_schedule():
     """Respond to incoming sms with if there is a game."""
